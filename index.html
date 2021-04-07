@@ -1,150 +1,170 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>フォームカスタマイズ</title>
-        <meta name="robots" content="noindex" />
-        <meta name="viewport" content="width=device-width" />
-        <link rel="stylesheet" href="css/style.css" media="all" />
-    </head>
 
-    <body>
-        <div class="container">
-            <h1 class="title">Netlify Forms</h1>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>フォームカスタマイズ</title>
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/style.css" media="all" />
+</head>
 
-            <form action="index.html" method="post" class="form">
-                <!-- テキスト -->
-                <div class="form-item">
-                    <span class="form-item-name">テキスト</span>
+<body>
+    <div class="container">
+        <h1 class="title">Netlify Forms</h1>
 
-                    <div class="form-item-body">
-                        <div class="form-item-text">
-                            <input type="text" name="" value="" class="m-form-text" />
+
+
+        <form action="thanks.html" method="post" class="form" netlify>
+            <!-- テキスト -->
+            <div class="form-item">
+                <span class="form-item-name">テキスト</span>
+
+                <div class="form-item-body">
+                    <div class="form-item-text">
+                        <input type="text" name="text" value="" class="m-form-text" />
+                    </div>
+                </div>
+
+                <!-- <p class="m-error">エラー文が入る</p> -->
+            </div>
+            <!-- end テキスト -->
+
+
+
+            <!-- ラジオボタン -->
+            <div class="form-item">
+                <span class="form-item-name">ラジオボタン</span>
+
+                <div class="form-item-body">
+                    <div class="m-form-radio">
+                        <div class="">
+                            <label>
+                                <input type="radio" name="radio" value="1" />
+                                <span class="m-form-radio-name">
+                                    <span class="m-form-radio-text">ラジオボタン1</span>
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="">
+                            <label>
+                                <input type="radio" name="radio" value="2" />
+                                <span class="m-form-radio-name">
+                                    <span class="m-form-radio-text">ラジオボタン2</span>
+                                </span>
+                            </label>
                         </div>
                     </div>
-
-                    <!-- <p class="m-error">エラー文が入る</p> -->
                 </div>
 
-                <!-- ラジオボタン -->
-                <div class="form-item">
-                    <span class="form-item-name">ラジオボタン</span>
+                <!-- <p class="m-error">エラー文が入る</p> -->
+            </div>
+            <!-- end ラジオボタン -->
 
-                    <div class="form-item-body">
-                        <div class="m-form-radio">
-                            <div class="">
-                                <label>
-                                    <input type="radio" name="radio" value="1" />
-                                    <span class="m-form-radio-name">
-                                        <span class="m-form-radio-text">ラジオボタン1</span>
-                                    </span>
-                                </label>
-                            </div>
 
-                            <div class="">
-                                <label>
-                                    <input type="radio" name="radio" value="2" />
-                                    <span class="m-form-radio-name">
-                                        <span class="m-form-radio-text">ラジオボタン2</span>
-                                    </span>
-                                </label>
-                            </div>
+
+            <!-- チェックボックス -->
+            <div class="form-item">
+                <span class="form-item-name">チェックボックス</span>
+
+                <div class="form-item-body">
+                    <div class="m-form-checkbox">
+                        <div class="">
+                            <label>
+                                <input type="checkbox" name="checkbox" value="checkform-item1" />
+                                <span class="m-form-checkbox-name">
+                                    <span class="m-form-checkbox-text">チェックボックス1</span>
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="">
+                            <label>
+                                <input type="checkbox" name="checkbox" value="checkform-item2" />
+                                <span class="m-form-checkbox-name">
+                                    <span class="m-form-checkbox-text">チェックボックス2</span>
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="">
+                            <label>
+                                <input type="checkbox" name="checkbox" value="checkform-item3" />
+                                <span class="m-form-checkbox-name">
+                                    <span class="m-form-checkbox-text">チェックボックス3</span>
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="">
+                            <label>
+                                <input type="checkbox" name="checkbox" value="checkform-item4" />
+                                <span class="m-form-checkbox-name">
+                                    <span class="m-form-checkbox-text">チェックボックス4</span>
+                                </span>
+                            </label>
                         </div>
                     </div>
-
-                    <!-- <p class="m-error">エラー文が入る</p> -->
                 </div>
 
-                <!-- チェックボックス -->
-                <div class="form-item">
-                    <span class="form-item-name">チェックボックス</span>
+                <!-- <p class="m-error">エラー文が入る</p> -->
+            </div>
+            <!-- end チェックボックス -->
 
-                    <div class="form-item-body">
-                        <div class="m-form-checkbox">
-                            <div class="">
-                                <label>
-                                    <input type="checkbox" name="checkbox" value="checkform-item1" />
-                                    <span class="m-form-checkbox-name">
-                                        <span class="m-form-checkbox-text">チェックボックス1</span>
-                                    </span>
-                                </label>
-                            </div>
 
-                            <div class="">
-                                <label>
-                                    <input type="checkbox" name="checkbox" value="checkform-item2" />
-                                    <span class="m-form-checkbox-name">
-                                        <span class="m-form-checkbox-text">チェックボックス2</span>
-                                    </span>
-                                </label>
-                            </div>
 
-                            <div class="">
-                                <label>
-                                    <input type="checkbox" name="checkbox" value="checkform-item3" />
-                                    <span class="m-form-checkbox-name">
-                                        <span class="m-form-checkbox-text">チェックボックス3</span>
-                                    </span>
-                                </label>
-                            </div>
+            <!-- セレクトボックス -->
+            <div class="form-item">
+                <span class="form-item-name">セレクトボックス</span>
 
-                            <div class="">
-                                <label>
-                                    <input type="checkbox" name="checkbox" value="checkform-item4" />
-                                    <span class="m-form-checkbox-name">
-                                        <span class="m-form-checkbox-text">チェックボックス4</span>
-                                    </span>
-                                </label>
-                            </div>
+                <div class="form-item-body">
+                    <div class="form-item-select">
+                        <div class="m-form-select">
+                            <select>
+                                <option value="select1">セレクト1</option>
+                                <option value="select2">セレクト2</option>
+                                <option value="select3">セレクト3</option>
+                                <option value="select4">セレクト4</option>
+                                <option value="select5">セレクト5</option>
+                                <option value="select6">セレクト6</option>
+                            </select>
                         </div>
                     </div>
-
-                    <!-- <p class="m-error">エラー文が入る</p> -->
                 </div>
 
-                <!-- セレクトボックス -->
-                <div class="form-item">
-                    <span class="form-item-name">セレクトボックス</span>
+                <!-- <p class="m-error">エラー文が入る</p> -->
+            </div>
+            <!-- end セレクトボックス -->
 
-                    <div class="form-item-body">
-                        <div class="form-item-select">
-                            <div class="m-form-select">
-                                <select>
-                                    <option value="select1">セレクト1</option>
-                                    <option value="select2">セレクト2</option>
-                                    <option value="select3">セレクト3</option>
-                                    <option value="select4">セレクト4</option>
-                                    <option value="select5">セレクト5</option>
-                                    <option value="select6">セレクト6</option>
-                                </select>
-                            </div>
-                        </div>
+
+
+            <!-- テキストエリア -->
+            <div class="form-item">
+                <span class="form-item-name">テキストエリア</span>
+
+                <div class="form-item-body">
+                    <div class="form-item-textarea">
+                        <textarea name="textarea" class="m-form-textarea"></textarea>
                     </div>
-
-                    <!-- <p class="m-error">エラー文が入る</p> -->
                 </div>
 
-                <!-- テキストエリア -->
-                <div class="form-item">
-                    <span class="form-item-name">テキストエリア</span>
+                <!-- <p class="m-error">エラー文が入る</p> -->
+            </div>
+            <!-- end テキストエリア -->
 
-                    <div class="form-item-body">
-                        <div class="form-item-textarea">
-                            <textarea name="name" class="m-form-textarea"></textarea>
-                        </div>
-                    </div>
 
-                    <!-- <p class="m-error">エラー文が入る</p> -->
-                </div>
 
-                <!-- 送信ボタン -->
-                <div class="form-submit">
-                    <input type="submit" name="" value="送信" class="m-form-submit-button" />
-                    <!-- <button type="submit" class="m-form-submit-button">送信</button> -->
-                </div>
-            </form>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js"></script>
-    </body>
+            <!-- 送信ボタン -->
+            <div class="form-submit">
+                <input type="submit" name="" value="送信" class="m-form-submit-button" />
+                <!-- <button type="submit" class="m-form-submit-button">送信</button> -->
+            </div>
+            <!-- end 送信ボタン -->
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js"></script>
+</body>
+
 </html>
