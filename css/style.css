@@ -429,3 +429,12 @@ img {
     background-color: #000;
     border: 2px solid rgb(33, 150, 243);
 }
+
+/* thanks page */
+/* ---------------- */
+
+.thanks-btn{
+    margin: 40px auto 0;
+    width: 300px;
+    text-align: center;
+}
